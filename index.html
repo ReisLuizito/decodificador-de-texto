@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <title>Encriptador</title>
-</head>
-<body>
-    <header>
-        <img class="logoAlura" src="/imagens/logoAlura.png" alt="Logo da Alura">
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Decodificador de texto - Luiz Guilherme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css"/>
+        
+    </head>
 
-    <main>
-        <section>
-            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+    <body>
+        <header>
+            <img class="logoAlura" src="logoAlura.png" alt="Logo da Alura">
+        </header>
 
+        <main>
+            <div>
+                <textarea class="text-area"  placeholder="Digite seu texto"></textarea>
+            </div>
+            
             <div class="informacao">
-                <h6>Apenas letras minúsculas e sem acento.</h6>
+                <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="buttons">
+                <button onclick="criptografar()" id="criptografar">Criptografar</button>
+                <button class="descriptografar">Descriptografar</button>
             </div>
 
-            <div class="botoes">
-                <button class="btn-encriptar">Criptografar</button>
-                <button class="btn-desencriptar">Descriptografar</button>
+            <div class="mensagem">
+                <textarea class="mensagem" cols="20" rows="10" placeholder="Nenhuma mensagem encontrada
+                Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+                <button class="btn-copiar">Copiar</button>
             </div>
-        </section>
-
-        <section>
-            <textarea class="mensagem" cols="20" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
-        </section>
-    </main>    
-    
-</body>
-</html>
+     </main>
+     <script src="index.js"></script>   
+    </body>

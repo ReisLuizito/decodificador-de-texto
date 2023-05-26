@@ -1,0 +1,16 @@
+* {
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+}
+
+.mensagem {
+    display: flex;
+    margin-left: 1000px;
+    height: 544px;
+    width: 400px;
+    background-color: white;
+    background-image:url(boneco.png);
+    background-repeat: no-repeat;
+}
+

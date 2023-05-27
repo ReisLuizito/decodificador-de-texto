@@ -14,23 +14,22 @@
         </header>
 
         <main>
-            <div>
+            <section>
                 <textarea class="text-area"  placeholder="Digite seu texto"></textarea>
-            </div>
             
-            <div class="informacao">
-                <p>Apenas letras minúsculas e sem acento</p>
-            </div>
-            <div class="buttons">
-                <button onclick="criptografar()" id="criptografar">Criptografar</button>
-                <button class="descriptografar">Descriptografar</button>
-            </div>
+                <div>
+                    <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
+                </div>
+                <div class="buttons">
+                    <button class="criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="descriptografar" onclick="">Descriptografar</button>
+                </div>
+            </section>
 
-            <div class="mensagem">
-                <textarea class="mensagem" cols="20" rows="10" placeholder="Nenhuma mensagem encontrada
-                Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            <section>
+                <textarea class="mensagem" cols="20" rows="10"></textarea>
                 <button class="btn-copiar">Copiar</button>
-            </div>
-     </main>
-     <script src="index.js"></script>   
+            </section>
+        </main>
+        <script src="index.js"></script>   
     </body>

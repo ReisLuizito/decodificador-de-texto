@@ -1,16 +1,54 @@
-const textArea = document.querySelector(".text-area");
-const mensagem = document.querySelector(".mensagem");
+let textInput = document.getElementById("textInput");
+let encrypt = document.getElementById("encrypt");
+let decrypt = document.getElementById("decrypt");
+let result = document.getElementById("output");
+let copyButton = document.getElementById("copy");
 
-// As "chaves" de criptografia que utilizaremos são:
-// `A letra "e" é convertida para "enter"`
-// `A letra "i" é convertida para "imes"`
-// `A letra "a" é convertida para "ai"`
-// `A letra "o" é convertida para "ober"`
-// `A letra "u" é convertida para "ufat"`
+document.getElementById("withText").style.display = "none";
 
+encrypt.onclick = encryptText;
+decrypt.onclick = decryptText;
+copyButton.onclick = copyText;
 
-function criptografar() {
-    const textoEncriptado = encriptar(textArea.value);
-    mensagem.value = textoEncriptado;
-    textArea.value = "";
+function encryptText() {
+  let text = textInput.value;
+
+  let textResult = text
+    .replaceAll("e", "enter")
+    .replaceAll("i", "imes")
+    .replaceAll("a", "ai")
+    .replaceAll("o", "ober")
+    .replaceAll("u", "ufat");
+
+  result.innerHTML !== undefined && (result.value = textResult);
+  result.innerHTML;
+
+  if (result.value !== undefined) {
+    document.getElementById("withText").style.display = "block";
+    document.getElementById("noText").style.display = "none";
+  } else {
+    document.getElementById("withText").style.display = "none";
+    document.getElementById("noText").style.display = "block";
+  }    
+}
+
+function decryptText() {
+  let text = textInput.value;
+
+  let textResult = text
+    .replaceAll(/enter/g, "e")
+    .replaceAll(/imes/g, "i")
+    .replaceAll(/ai/g, "a")
+    .replaceAll(/ober/g, "o")
+    .replaceAll(/ufat/g, "u");
+
+  text !== textResult && (result.value = textResult);
+}
+
+function copyText() {
+  result.select();
+  result.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(result.value);
+
+  alert("Texto copiado");
 }

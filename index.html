@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Decodificador de texto - Luiz Guilherme</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="index.css"/>
-        
-    </head>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-        <header>
-            <img class="logoAlura" src="logoAlura.png" alt="Logo da Alura">
-        </header>
+    <link rel="stylesheet" href="index.css" />
+    <title>Decodificador de texto - Luiz Guilherme Reis da Silva</title>
+    <style>
+        @font-face {
+            font-family: 'OCR A Std Regular';
+            src: url('fonts/OCR A Std Regular.ttf') format('truetype'); 
+            font-family: 'Nurom-Bold'; 
+            src: url('fonts/Nurom-Bold.ttf') format('truetype');
+        }
+    </style>
+  </head>
 
-        <main>
-            <section>
-                <textarea class="text-area"  placeholder="Digite seu texto"></textarea>
-            
-                <div>
-                    <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
-                </div>
-                <div class="buttons">
-                    <button class="criptografar" onclick="criptografar()">Criptografar</button>
-                    <button class="descriptografar" onclick="">Descriptografar</button>
-                </div>
-            </section>
-
-            <section>
-                <textarea class="mensagem" cols="20" rows="10"></textarea>
-                <button class="btn-copiar">Copiar</button>
-            </section>
-        </main>
-        <script src="index.js"></script>   
-    </body>
+  <body>
+    <header>
+      <img src="images/alura.png" alt="Logo Alura" />
+    </header>
+    <main>
+      <div class="decoder">
+        <textarea
+          type="text"
+          name=""
+          id="textInput"
+          placeholder="</digite seu texto>"
+          ></textarea>              
+        <div class="important">
+          <img src="images/aviso.png" alt="Logo alerta" />
+          <span>Apenas letras minúsculas e sem acento.</span>
+        </div>
+        <div class="buttons-wrapper">
+          <button class="encrypt" id="encrypt">Criptografar</button>
+          <button class="decrypt" id="decrypt">Descriptografar</button>
+        </div>
+      </div>
+      <div class="result">
+        <div class="with-text" id="withText">
+          <textarea id="output" disabled></textarea>
+          <button class="copy" id="copy">Copiar</button>
+        </div>
+        <div class="no-text" id="noText">
+          <img src="images/codigo.png" class="empty-img" alt="Ilustração de um lupa com alerta" />
+          <p>Nenhuma mensagem encontrada</p>
+          <span
+            >Digite um texto que você deseja criptografar ou
+            descriptografar</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/ReisLuizito">&copy<span>Desenvolvido por Luiz Guilherme Reis da Silva</span></a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

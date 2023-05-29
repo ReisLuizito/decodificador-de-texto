@@ -1,10 +1,10 @@
 # Decodificador de Texto - [Alura Challenges Oracle ONE](https://www.alura.com.br)
 
+![print](https://github.com/ReisLuizito/decodificador-de-texto/assets/131827303/47422bfc-509a-43e7-a3f8-08be86386468)
+
 ## Boas vindas ao primeiro desafio!
 
 Durante estas duas semanas, vamos trabalhar em uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
-
-
 
 **As "chaves" de criptografia que utilizaremos são:**
 - A letra "e" é convertida para "enter"

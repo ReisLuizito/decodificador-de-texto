@@ -1,6 +1,6 @@
 # Decodificador de Texto - [Alura Challenges Oracle ONE](https://www.alura.com.br)
 
-![print](https://github.com/ReisLuizito/decodificador-de-texto/assets/131827303/47422bfc-509a-43e7-a3f8-08be86386468)
+![print](https://github.com/ReisLuizito/decodificador-de-texto/assets/131827303/664cc923-739d-4152-b034-8c3bcc10ec1b)
 
 ## Boas vindas ao primeiro desafio!
 
